@@ -59,7 +59,7 @@ const Cart = (): JSX.Element => {
           {cartFormatted.map(product => (
           <tr data-testid="product" key={product.id}>
             <td>
-              <img src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis1.jpg" alt="Tênis de Caminhada Leve Confortável" />
+              <img src={product.image} alt={product.title} />
             </td>
             <td>
               <strong>Tênis de Caminhada Leve Confortável</strong>
